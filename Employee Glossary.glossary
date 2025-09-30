@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<cwd_glossary name="EMPLOYEE" description="generated from logical model of design Untitled_1" id="A4DC4FDF-E3C9-2160-63B3-B645EE2FA78F" incomplete_modifiers="true" >
+
+   <glossaryWord name="Raj" plural="raj" abbreviation="" alt_abbreviation="" id="E07A5900-7DDF-FAD8-5EB8-EAAEF1DFC704" import_id="" description="" />
+   <glossaryWord name="last_name" plural="last_names" abbreviation="" alt_abbreviation="" id="E7E5B0F5-6248-EE49-6BF1-C13E6DB1C4C7" import_id="" description="" />
+   <glossaryWord name="first_name" plural="first_names" abbreviation="" alt_abbreviation="" id="320279CE-DEBC-D491-28F4-5A7D2D8DAF94" import_id="" description="" />
+   <glossaryWord name="age" plural="ages" abbreviation="" alt_abbreviation="" id="C31F1E47-F3D7-2E1A-1AD7-1DFC729F18ED" import_id="" description="" />
+   <glossaryWord name="experience" plural="experiences" abbreviation="" alt_abbreviation="" id="8F2A5BEF-5AB9-E190-48E7-7B89A942CEDD" import_id="" description="" />
+   <glossaryWord name="salary" plural="salaries" abbreviation="" alt_abbreviation="" id="18F7B291-EEEF-5776-C6C6-9EA21D26FB5A" import_id="" description="" />
+
+</cwd_glossary>

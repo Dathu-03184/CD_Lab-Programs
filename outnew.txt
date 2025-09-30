@@ -1,0 +1,28 @@
+
+1:iuytre
+
+2:#include <stdio.h>   // standard header file
+
+
+3:// Macro definitions
+
+4:#define PI 3.14159
+
+5:#define SQUARE(x) ((x) * (x))
+
+
+6:int main() {
+
+7:    int r = 5;
+
+
+8:    printf("Value of PI = %.2f\n", PI);
+
+9:    printf("Square of %d = %d\n", r, SQUARE(r));
+
+10:    printf("Area of circle with radius %d = %.2f\n", r, PI * SQUARE(r));
+
+
+11:    return 0;
+
+12:}

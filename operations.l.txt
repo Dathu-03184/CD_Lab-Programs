@@ -1,0 +1,48 @@
+%{
+#include <stdio.h>
+#include <stdlib.h>
+
+int num1 = 0, num2 = 0;
+char op = 0;
+%}
+
+%%
+
+[0-9]+      {
+                if(num1 == 0)
+                    num1 = atoi(yytext);
+                else
+                    num2 = atoi(yytext);
+            }
+
+"+"|"-"|"*"|"/"  { op = yytext[0]; }
+
+[ \t\n]     ;  /* ignore spaces and newlines */
+
+.           { printf("Invalid character: %s\n", yytext); }
+
+%%
+
+int yywrap() {
+    return 1;
+}
+
+int main() {
+    printf("Enter expression :\n");
+    yylex();
+
+    switch(op) {
+        case '+': printf("Result = %d\n", num1 + num2); break;
+        case '-': printf("Result = %d\n", num1 - num2); break;
+        case '*': printf("Result = %d\n", num1 * num2); break;
+        case '/': 
+            if(num2 != 0) 
+                printf("Result = %d\n", num1 / num2);
+            else 
+                printf("Error: Division by zero\n");
+            break;
+        default: printf("No valid operator found\n");
+    }
+
+    return 0;
+}
